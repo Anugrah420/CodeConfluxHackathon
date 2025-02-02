@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode form {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        .dark-mode input[type="text"],
+        .dark-mode input[type="date"],
+        .dark-mode input[type="email"] {
+            background-color: #333;
+            color: #ffffff;
+            border: 1px solid #555;
+        }
+        .dark-mode button {
+            background-color: #28a745;
+        }
+        .dark-mode button:hover {
+            background-color: #218838;
+        }
+        .toggle-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="toggle-button" onclick="toggleDarkMode()">🌙 Dark Mode: Off</div>
+    <form id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="date" id="dateOfBirth" required>
+        <input type="email" id="emailId" placeholder="Enter your email" required>
+        <p>Terms and condition:RUN!</p>
+        <p>RUN!</p>
+        <label for="acceptTerms">
+            <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+            I agree to the terms and guidelines
+        </label>
+        <br><br>
+        <button type="submit" id="loginSubmit" class="btn">Submit</button>
+    </form>
+  <script src="scriptlogin.js"></script>
+</body>
+</html>
